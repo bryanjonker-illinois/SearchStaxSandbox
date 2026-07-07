@@ -9,6 +9,7 @@ namespace SearchStaxSandbox {
         public bool IsValid { get; set; } = true;
         public string Title { get; set; } = "";
         public string Title_txt_en { get; set; } = "";
+        public string Category_news_s { get; set; } = "";
         public string Description { get; set; } = "";
         public string Url { get; set; } = "";
         public string Url_t { get; set; } = "";
@@ -41,6 +42,7 @@ namespace SearchStaxSandbox {
                     Url = profileUrl,
                     Url_t = profileUrl,
                     Id = profileUrl,
+                    Category_news_s = "People",
                     Content = content.ToString()
                 };
 

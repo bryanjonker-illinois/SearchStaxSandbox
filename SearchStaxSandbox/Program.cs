@@ -11,8 +11,7 @@ var directoryList = await DirectoryList.Generate(source);
 var errorList = new List<string>();
 
 var newName = new List<string> {
-    "anmeyer2",
-    "as227"
+    "robblind"
 };
 
 

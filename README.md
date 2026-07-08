@@ -19,3 +19,5 @@ Standard format:
 This will go through a JSON file that contains an array of objects, each with a `data` property. The tool will send each `data` object to the SearchStax application using the provided API key and URL, doing a transformation of the data. 
 
 Each data object needs a custom transformation.
+
+This also has a PowerShell script that will send a delete command, and a Powershell script that mimics the console application. 

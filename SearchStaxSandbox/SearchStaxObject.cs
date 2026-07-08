@@ -10,13 +10,14 @@ namespace SearchStaxSandbox {
         public string Title { get; set; } = "";
         public string Title_txt_en { get; set; } = "";
         public string Category_news_s { get; set; } = "";
+        public string Content { get; set; } = "";
         public string Description { get; set; } = "";
         public string Url { get; set; } = "";
         public string Url_t { get; set; } = "";
         public string Id { get; set; } = "";
 
-        public string Content { get; set; } = "";
         private static readonly HttpClient client = new();
+
         public static async Task<SearchStaxObject> Generate(string source, string netId) {
             var url = $"https://directoryapi.wigg.illinois.edu/api/Directory/GetProfile/{source}/{netId}";
             try {

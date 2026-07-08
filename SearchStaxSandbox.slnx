@@ -1,6 +1,8 @@
 <Solution>
   <Folder Name="/Solution Items/">
     <File Path="LICENSE.txt" />
+    <File Path="Powershell/searchstax.ps1" />
+    <File Path="Powershell/searchstax_delete.ps1" />
     <File Path="README.md" />
   </Folder>
   <Project Path="SearchStaxSandbox/SearchStaxSandbox.csproj" />

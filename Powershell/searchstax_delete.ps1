@@ -4,12 +4,11 @@ param(
 )
 
 if ([string]::IsNullOrWhiteSpace($ApiKey)) {
-    throw "The -ApiKey parameter is required."
+    throw "The -ApiKey parameter is required. Example: -ApiKey:xxxxxxxxxxxxxxxxxxxxxx"
 }
 if ([string]::IsNullOrWhiteSpace($IllinoisUrl)) {
-    throw "The -IllinoisUrl parameter is required."
+    throw "The -IllinoisUrl parameter is required. Example: -IllinoisUrl:https://illinois.edu"
 }
-
 
 $Headers = @{
     Authorization = "Token $ApiKey"

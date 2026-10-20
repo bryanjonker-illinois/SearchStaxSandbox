@@ -1,8 +1,11 @@
 param(
     [string]$ApiKey,
-    [string]$SearchStaxUrl,
     [string]$Source = "education"
 )
+
+if ([string]::IsNullOrWhiteSpace($ApiKey)) {
+    throw "The -ApiKey parameter is required. Example: -ApiKey:xxxxxxxxxxxxxxxxxxxxxx"
+}
 
 $Headers = @{
     Authorization = "Token $ApiKey"
@@ -91,7 +94,7 @@ foreach ($NetId in $NetIds) {
         # Send to SearchStax
         #
         $result = Invoke-RestMethod `
-            -Uri "$SearchStaxUrl?commit=true" `
+            -Uri "https://searchcloud-1-us-east-1.searchstax.com/29847/urbanachampaignmain-5466/update?commit=true" `
             -Method Post `
             -Headers $Headers `
             -ContentType "application/json" `

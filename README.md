@@ -20,4 +20,12 @@ This will go through a JSON file that contains an array of objects, each with a 
 
 Each data object needs a custom transformation.
 
-This also has a PowerShell script that will send a delete command, and a Powershell script that mimics the console application. 
+## PowerShell Components
+
+We have PowerShell scripts that:
+* **searchstax.ps1**: Mimics the console application to pull data from a source and generate people entries
+* **searchstax_delete.ps1**: Sends a delete command to remove a page from the search stax list. 
+* **searchstax_search.ps1**: Checks to see if a page is loaded.
+* **searchstax_update.ps1**: Load a content item -- must include the page title, the page content, and the page URL. There is an optional category.
+
+The search requires the read or read/write API key. All the others require the read/write API key.
